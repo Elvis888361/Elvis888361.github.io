@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import { HiArrowDown } from "react-icons/hi";
 import { personal } from "../data/info";
+
+const ThreeBackground = lazy(() => import("./ThreeBackground"));
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -20,9 +22,12 @@ export default function Hero() {
       className="relative min-h-screen flex items-center pt-24 overflow-hidden"
     >
       {/* Animated background */}
-      <div className="absolute inset-0 grid-bg opacity-50" />
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-primary-600/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute inset-0 grid-bg opacity-30 pointer-events-none" />
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-primary-600/20 rounded-full blur-3xl animate-pulse pointer-events-none" />
+      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse pointer-events-none" />
+      <Suspense fallback={null}>
+        <ThreeBackground />
+      </Suspense>
 
       <div className="container-x relative z-10 px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* Text */}
@@ -113,15 +118,15 @@ export default function Hero() {
                 className="w-full h-full object-cover object-top"
               />
             </div>
-            {/* Floating tech badges */}
+            {/* Floating role badges */}
             <div className="absolute -top-4 -left-4 px-3 py-1 rounded-full glass text-xs font-mono text-accent">
-              React
+              Frontend
             </div>
             <div className="absolute top-1/4 -right-6 px-3 py-1 rounded-full glass text-xs font-mono text-accent">
-              ERPNext
+              Backend
             </div>
             <div className="absolute bottom-10 -left-8 px-3 py-1 rounded-full glass text-xs font-mono text-accent">
-              Next.js
+              ERP
             </div>
             <div className="absolute -bottom-2 right-6 px-3 py-1 rounded-full glass text-xs font-mono text-accent">
               CI/CD

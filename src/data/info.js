@@ -1,14 +1,17 @@
 export const personal = {
   name: "Elvis Ndegwa Kangethe",
   roles: [
-    "Software Developer",
+    "Frontend Developer",
+    "Backend Developer",
     "Product Manager",
-    "ERP Specialist",
+    "ERP Developer",
     "CI/CD Engineer",
+    "Test Automation Engineer",
+    "Data Analyst",
     "Cybersecurity Enthusiast",
   ],
   tagline:
-    "Full Stack Developer & Product Manager building impactful, user-centered solutions across web, ERP, and enterprise systems.",
+    "Frontend & Backend Developer, Product Manager and ERP Developer building impactful, user-centered solutions across web, ERP, data and enterprise systems.",
   email: "elvisndegwa90@gmail.com",
   phone: "+254 745 638 455",
   location: "Nairobi, Kenya",
@@ -17,28 +20,32 @@ export const personal = {
   linkedin: "https://linkedin.com/in/elvis-ndegwa-b0b785197/",
 };
 
-export const about = `I am a highly motivated Full Stack Developer and Product Manager with a strong foundation in both business and information technology. My passion lies in creating impactful solutions that merge technical precision with user-centered design.
+export const about = `I am a highly motivated Frontend & Backend Developer and Product Manager with a strong foundation in both business and information technology. My passion lies in creating impactful solutions that merge technical precision with user-centered design.
 
-I thrive in dynamic environments where I can apply my expertise across modern web frameworks, ERP platforms (Frappe/ERPNext, Odoo), CI/CD pipelines, and cybersecurity practices to build adaptable, high-performing software solutions.
+I thrive in dynamic environments where I can apply my expertise across modern frontend and backend frameworks, ERP platforms, CI/CD pipelines, test automation, data analysis and cybersecurity practices to build adaptable, high-performing software solutions.
 
-From designing intuitive interfaces with React & Tailwind, to implementing robust server-side logic with Node.js, Django, Laravel, and Frappe, I bridge the gap between front-end and back-end development while keeping security and deployment automation in mind.`;
+From designing intuitive interfaces on the frontend to implementing robust server-side logic on the backend, I bridge the gap between systems — while keeping security, automation, and clean deployment pipelines in mind.`;
 
 export const skills = {
-  "Full Stack Development": [
+  "Frontend Development": [
     "React.js",
     "Next.js",
     "Vue.js",
+    "JavaScript",
+    "Tailwind CSS",
+    "HTML / CSS",
+    "Jinja",
+  ],
+  "Backend Development": [
     "Node.js",
     "Django",
     "Laravel",
     "PHP",
     "Python",
-    "JavaScript",
     "Java",
-    "Tailwind CSS",
-    "Jinja",
+    "REST APIs",
   ],
-  "ERP & Frameworks": [
+  "ERP Development": [
     "Frappe Framework",
     "ERPNext",
     "Odoo",
@@ -53,8 +60,24 @@ export const skills = {
     "Docker",
     "Continuous Deployment",
     "Netlify",
-    "Automated Testing",
     "Linux / Bash",
+  ],
+  "Test Automation": [
+    "Unit Testing",
+    "Integration Testing",
+    "End-to-End Testing",
+    "Selenium",
+    "Cypress",
+    "Jest",
+    "PyTest",
+  ],
+  "Data Analysis": [
+    "SQL",
+    "Python (Pandas, NumPy)",
+    "Data Visualization",
+    "Reporting & Dashboards",
+    "Excel / Power BI",
+    "Machine Learning Basics",
   ],
   "Cybersecurity": [
     "Introduction to Cybersecurity (Cisco)",
@@ -72,36 +95,31 @@ export const skills = {
     "Time Management",
     "Task Organization",
   ],
-  "Data & Mobile": [
-    "Data Science",
-    "Machine Learning",
-    "Android Development",
-  ],
 };
 
 export const experience = [
   {
     company: "Aqiq Solutions Limited",
-    role: "Software Developer & Product Manager",
+    role: "Frontend & Backend Developer · Product Manager · ERP Developer",
     period: "Sep 2023 - Present",
     location: "Nairobi, Kenya",
     points: [
-      "Full Stack Developer & Product Manager working with Java, Next.js, PHP, JavaScript, Python, React, Jinja, Odoo, ERPNext, and the Frappe Framework.",
+      "Frontend & Backend Developer and Product Manager working across modern web stacks and ERP platforms.",
       "Lead product management efforts, bridging technical development with business needs to deliver impactful, user-centered solutions.",
-      "Customize ERPNext and Odoo frameworks to streamline complex business processes for clients.",
+      "Build and customize ERP solutions (Frappe/ERPNext, Odoo) to streamline complex business processes for clients.",
       "Integrate GPS tracking systems and payment gateways into ERP solutions for seamless functionality.",
       "Collaborate with cross-functional teams to deliver projects on time and exceed shared objectives.",
     ],
   },
   {
     company: "Upeosoft Limited",
-    role: "Software Developer",
+    role: "Frontend & Backend Developer · ERP Developer",
     period: "Nov 2022 - Jul 2023",
     location: "Nairobi, Kenya",
     points: [
-      "Developed efficient, user-friendly applications using Python, React, PHP, Jinja and the Frappe Framework.",
+      "Developed efficient, user-friendly applications across frontend and backend layers.",
       "Focused on rigorous testing and evaluation to ensure software quality, performance, and reliability.",
-      "Contributed to ERP customization and integration projects.",
+      "Contributed to ERP customization, integration and reporting projects.",
     ],
   },
   {
@@ -169,28 +187,28 @@ export const education = [
 
 export const projects = [
   {
-    title: "ERPNext + GPS Integration",
+    title: "ERP + GPS Integration",
     description:
-      "Integrated real-time GPS tracking data into ERPNext, building custom DocTypes and dashboards for fleet & logistics visibility.",
-    tags: ["Frappe", "ERPNext", "Python", "GPS API"],
+      "Integrated real-time GPS tracking data into an ERP system, building custom DocTypes and dashboards for fleet & logistics visibility.",
+    tags: ["ERP", "Backend", "Python", "GPS API"],
   },
   {
-    title: "Custom ERP Modules (Odoo / ERPNext)",
+    title: "Custom ERP Modules",
     description:
       "Built and customized ERP modules tailored to client business processes — inventory, HR, payments and reporting.",
-    tags: ["Odoo", "ERPNext", "Python", "Jinja"],
+    tags: ["ERP", "Backend", "Reporting"],
   },
   {
-    title: "Next.js Business Web Apps",
+    title: "Modern Business Web Apps",
     description:
-      "Designed and deployed scalable Next.js + React web applications with Tailwind CSS, CI/CD on Netlify and automated builds.",
-    tags: ["Next.js", "React", "Tailwind", "Netlify"],
+      "Designed and deployed scalable frontend + backend web applications with Tailwind UI, CI/CD pipelines and automated builds.",
+    tags: ["Frontend", "Backend", "CI/CD"],
   },
   {
     title: "J.P. Morgan Live Trading Feed",
     description:
       "Generated a live graph using JPMorgan's Perspective open-source library to give traders a clear, visual data feed.",
-    tags: ["JavaScript", "Perspective", "Finance"],
+    tags: ["Frontend", "Data", "Finance"],
   },
 ];
 
