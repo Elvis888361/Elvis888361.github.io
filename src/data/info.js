@@ -99,16 +99,27 @@ export const skills = {
 
 export const experience = [
   {
+    company: "Logixfleet Limited",
+    role: "Software Engineer",
+    period: "Jan 2025 - Present",
+    location: "Nairobi, Kenya",
+    points: [
+      "Delivered comprehensive documentation for all software development projects, enhancing team understanding and project continuity.",
+      "Collaborated across technical and design teams to produce innovative software applications.",
+      "Worked with cross-functional teams to identify system requirements, improving software functionality and user experience.",
+    ],
+  },
+  {
     company: "Aqiq Solutions Limited",
     role: "Frontend & Backend Developer · Product Manager · ERP Developer",
-    period: "Sep 2023 - Present",
+    period: "Sep 2023 - Jan 2025",
     location: "Nairobi, Kenya",
     points: [
       "Frontend & Backend Developer and Product Manager working across modern web stacks and ERP platforms.",
-      "Lead product management efforts, bridging technical development with business needs to deliver impactful, user-centered solutions.",
-      "Build and customize ERP solutions (Frappe/ERPNext, Odoo) to streamline complex business processes for clients.",
-      "Integrate GPS tracking systems and payment gateways into ERP solutions for seamless functionality.",
-      "Collaborate with cross-functional teams to deliver projects on time and exceed shared objectives.",
+      "Led product management efforts, bridging technical development with business needs to deliver impactful, user-centered solutions.",
+      "Built and customized ERP solutions (Frappe/ERPNext, Odoo) to streamline complex business processes for clients.",
+      "Integrated GPS tracking systems and payment gateways into ERP solutions for seamless functionality.",
+      "Collaborated with cross-functional teams to deliver projects on time and exceed shared objectives.",
     ],
   },
   {
