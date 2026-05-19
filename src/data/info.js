@@ -224,6 +224,7 @@ export const projects = [
 ];
 
 export const references = [
+  { name: "Nicky Chemos", role: "Logixfleet Limited", phone: "+254 700 517 934" },
   { name: "George Kiirithio", role: "Upeosoft Limited — Software Developer", phone: "+254 793 018 396" },
   { name: "Ronoh Kirui", role: "Aqiq Solutions — Software Developer", phone: "+254 113 456 822" },
 ];
